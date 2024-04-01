@@ -1,0 +1,163 @@
+
+  /*           */
+
+.destination-info img{
+    width: 300px;
+    border-radius: 10% 30% 
+}
+.rc {
+    padding: 20px;
+    width: 200px;
+    border-radius: 10% 30%  
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .flex-image {
+    flex: 1;
+    padding: 20px;
+    max-width: 200px; /* Adjust the max-width as needed */
+    border-radius: 20%;
+    
+  }
+.footer
+{
+    background-color: #333;
+}
+.footer ul
+{   
+    
+    list-style: none;
+    display: block;
+    color: white;
+    padding: 1px 20px;
+}
+.footer ul li {
+    text-align: center;
+}
+
+/* Meniu de navigare */
+.color-animation {
+    color: blue; /* Initial color */
+    animation: color-change-animation 2s infinite alternate; /* Animation */
+}
+
+@keyframes color-change-animation {
+    0% { color: rgb(119, 223, 179); }
+    50% { color: rgb(118, 175, 228); }
+    100% { color: rgb(224, 135, 135); }
+}
+f{
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+.main-nav {
+
+    background-color: #333;
+}
+
+.main-nav ul {
+   list-style: none;
+   background-color: #333;
+   
+}
+
+.main-nav ul li {
+    display: inline-block; 
+    position: relative; 
+}
+
+.main-nav ul li a {
+    display: block; 
+    color: rgb(184, 216, 226);
+    padding: 25px 40px;
+    text-decoration: none; 
+  
+}
+
+/* Dropdown */
+.main-nav ul li ul.dropdown li {
+    display: block;
+}
+.main-nav ul li ul.dropdown {
+    width:100%;
+    position: absolute;
+    background-color: #164355; 
+    z-index: 999; 
+    display: none;
+    padding: 1px ;
+}
+.main-nav ul li a:hover {
+    background-color: #404b63; 
+}
+.main-nav ul li:hover ul.dropdown {
+    display: block; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    color: rgb(69, 102, 112);
+    font-size: 30px;
+    font-style: italic;
+
+}
+.center2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    color: rgb(69, 102, 112);
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+ x {    
+        border: 1px solid pink;
+        color: rgb(177, 120, 98);
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        font-size: 20pt;
+    }
+  
+    
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100px); }
+    to { transform: translateY(0); }
+}
+
+/* Apply animations to elements */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Apply specific animations to sections */
+#welcome-section.animated.fadeIn {
+    animation-name: fadeIn;
+}
+
+#featured-destination.animated.zoomIn {
+    animation-name: zoomIn;
+}
+
+#latest-posts.animated.slideInUp {
+    animation-name: slideInUp;
+}
